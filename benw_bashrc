@@ -1,0 +1,66 @@
+# some more ls aliases
+alias ll='ls -talFh'
+alias la='ls -A'
+alias l='ls -CF'
+alias pip='pip2'
+alias gits='git status'
+alias gita='git add'
+alias gitc='git commit '
+alias gitl='git log'
+#alias rm="echo Use 'del'/'trash', or the full path i.e. '/bin/rm'"
+alias rm="trash"
+
+
+export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+export LIBRARY_PATH="/usr/local/cuda-9.0/targets/x86_64-linux/lib:/usr/lib:/usr/local/cuda-9.0/lib64:/usr/local/lib:"$LIBRARY_PATH
+export LD_LIBRARY_PATH="/usr/lib:/usr/local/cuda-9.0/lib64:/usr/local/lib:"$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/usr/local/cuda-9.0/targets/x86_64-linux/lib:"$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:"$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/usr/local/cuda-9.0/extras/CUPTI/lib64:"$LD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda-9.0
+export CUDA_INSTALL_DIR=/usr/local/cuda-9.0
+export CUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-9.0
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/benw/tools/TensorRT-4.0.1.6/lib
+
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+
+#export PYTHONPATH=/home/benw/tools/tensorflow-models/research:/home/benw/tools/tensorflow-models/research/slim:$PYTHONPATH
+#export PYTHONPATH=/usr/local:/usr/local/lib:/usr/lib:$PYTHONPATH
+export LD_PRELOAD="/usr/lib/libtcmalloc_minimal.so.4"
+#export PYTHONPATH=$PYTHONPATH:/usr/local/lib:/home/benw/test/caffe-ssd/python
+#export PYTHONPATH=$PYTHONPATH:/home/benw/tools/pytorch
+
+#export CPATH="/usr/include/hdf5/serial/"
+
+JAVA_HOME=~/java/jdk1.8.0_181
+PATH=$PATH:~/java/jdk1.8.0_181/bin
+export JAVA_HOME
+ANT_HOME=~/ant/apache-ant-1.9.13
+PATH=$PATH:~/ant/apache-ant-1.9.13/bin
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH="$PATH:/home/benw/tools/android-studio/gradle/gradle-4.10.1/bin" 
+#export PATH="$PATH:/home/benw/tools/aruco-lib/bin" 
+#export LIBRARY_PATH="/home/benw/tools/aruco-lib/lib"$LIBRARY_PATH
+export ANT_HOME
+
+
+export NUMBAPRO_CUDA_DRIVER=/usr/lib/x86_64-linux-gnu/libcuda.so.1
+export NUMBAPRO_NVVM=/usr/local/cuda-9.0/nvvm/lib64/libnvvm.so.3
+export NUMBAPRO_LIBDEVICE=/usr/local/cuda-9.0/nvvm/libdevice/
+
+
+#source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+#source ~/intel/computer_vision_sdk/bin/setupvars.sh -pyver 2.7
+
+#conda activate
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+if [ -f "/home/benw/anaconda3/etc/profile.d/conda.sh" ]; then
+    . "/home/benw/anaconda3/etc/profile.d/conda.sh"
+else
+    export PATH="/home/benw/anaconda3/bin:$PATH"
+fi
+# <<< conda init <<<
